@@ -1,11 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="0oSkNp0dbmssY701U9i88-vI9gHhddxiUbwmMu4fmRU" />
+
 <style>
+    /* Base Styles */
     body {
         font-family: Arial, sans-serif;
         background: #eef6f7;
@@ -13,102 +14,140 @@
         padding: 0;
         line-height: 1.7;
     }
+
     .container {
-        width: 80%;
+        width: 90%;
         max-width: 1000px;
-        margin: 30px auto;
+        margin: 20px auto;
+        padding: 0 10px;
     }
+
     .title-box {
-        background: #0891b2 !important;
-        padding: 40px 50px;
+        background: #0891b2;
+        padding: 30px 20px;
         border-radius: 10px;
         box-shadow: 0 2px 10px rgba(0,0,0,0.08);
         margin-bottom: 20px;
-        font-size: 36px;
     }
+
     h1 {
         margin: 0;
-        font-size: 34px;
+        font-size: 28px;
         color: #ffffff;
     }
+
     .blog-box {
         background: #ffffff;
-        padding: 25px 30px;
+        padding: 20px;
         border-radius: 10px;
         box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        margin-top: 15px;
     }
+
     h2 {
-        margin-top: 30px;
-        font-size: 28px;
+        margin-top: 20px;
+        font-size: 24px;
         color: #0d9488;
     }
+
     p, li {
         font-size: 16px;
         color: #444;
     }
+
     ul {
         padding-left: 20px;
     }
+
     a {
         color: #065f46;
         font-weight: bold;
         text-decoration: none;
     }
+
     a:hover {
         text-decoration: underline;
     }
-</style>
 
-<style>
-    #progressBar{
-        position:fixed;
-        top:0;
-        left:0;
-        height:5px;
-        width:0;
-        background:#0d9488;
-        z-index:9999;
+    /* Progress Bar */
+    #progressBar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 5px;
+        width: 0;
+        background: #0d9488;
+        z-index: 9999;
     }
-</style>
-</head>
 
-<body>
-<div id="progressBar"></div>
+    /* Responsive */
+    @media (max-width: 768px) {
+        .title-box h1 {
+            font-size: 22px;
+        }
+        .title-box {
+            padding: 20px 15px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        .blog-box {
+            padding: 15px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .title-box h1 {
+            font-size: 20px;
+        }
+        h2 {
+            font-size: 18px;
+        }
+        p, li {
+            font-size: 14px;
+        }
+    }
+
+</style>
 
 <script>
-window.addEventListener('scroll',function(){
- let h=document.documentElement;
- let sc=(h.scrollTop)/(h.scrollHeight-h.clientHeight)*100;
- document.getElementById('progressBar').style.width=sc+'%';
+window.addEventListener('scroll', function() {
+    let h = document.documentElement;
+    let sc = (h.scrollTop)/(h.scrollHeight-h.clientHeight)*100;
+    document.getElementById('progressBar').style.width = sc + '%';
 });
 </script>
 
+</head>
+<body>
+
+<div id="progressBar"></div>
+
 <div class="container">
 
-<div class="title-box">
+    <div class="title-box">
+        <h1>Whatutalkingboutwillis com - Your Trusted Daily Hub for News, Lifestyle, Travel & Gift Guides</h1>
+    </div>
 
-<h1>Whatutalkingboutwillis com- Your Trusted Daily Hub for News, Lifestyle, Travel & Gift Guides</h1>
     <div class="blog-box">
         <p>Welcome to Whatutalkingboutwillis com. Your trusted daily hub for Latest news, lifestyle insights, smart home hacks, gift guide and health news.</p>
 
-
         <p>Whatutalkingboutwillis com is an independent online platform covering trending news blog, tips about technology, lifestyle, smart home, wellness, entertainment, and life hacks. We cover topics that are clean, accurate, and entertaining to read. Stay tuned for new updates and information you will find useful and interesting. <a href="https://whatutalkingboutwilis.blog/">Whatutalkingboutwillis com</a> curates trending news stories and offers valuable knowledge and tips on a variety of topics. Browse through our easily navigated site for the latest posts and information you can count on.</p> 
-
 
         <h2>Whatutalkingboutwillis Latest News</h2>
         <p>"In this category of Whatutalkingboutwillis Latest news, I will tell you about Latest news and trending viral topics."</p>
 
         <h2>Whatutalkingboutwillis Blog</h2>
-        <p> In this scetion, we want to tell you about <a href="https://whatutalkingboutwilis.blog/whatutalkingboutwillis-blog/">Whatutalkingboutwillis blog</a> and other latest blog posts.</p>
-        
+        <p>In this section, we want to tell you about <a href="https://whatutalkingboutwilis.blog/whatutalkingboutwillis-blog/">Whatutalkingboutwillis blog</a> and other latest blog posts.</p>
 
         <h2>Whatutalkingboutwillis Gift Guide</h2>
-        <p>In this category of gift guide, We will tell you about Whatutalkingboutwillis gift guide, and other type of gifts.</p>
+        <p>In this category of gift guide, we will tell you about Whatutalkingboutwillis gift guide, and other types of gifts.</p>
 
-       
         <h2>Whatutalkingboutwillis Contact</h2>
         <p>Email: danishtariq675@gmail.com <br> WhatsApp: +923265209400</p>
-    
-</body>
+    </div>
 
+</div>
+
+</body>
 </html>
